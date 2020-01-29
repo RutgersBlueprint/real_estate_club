@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.test {
+  border-color: black;
+  border-width: 1px;
+  border-style: solid;
+}

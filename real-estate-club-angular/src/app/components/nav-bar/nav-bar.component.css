@@ -1,0 +1,19 @@
+.rrec-nav-bar {
+  background: #404040;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.rrec-nav-link {
+  font-size: 24px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
