@@ -8,3 +8,12 @@ body {
   border-width: 1px;
   border-style: solid;
 }
+
+html {
+  background: url("./app/assets/background-image.jpg") no-repeat center center
+    fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
