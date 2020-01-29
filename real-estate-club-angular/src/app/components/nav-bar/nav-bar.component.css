@@ -1,10 +1,18 @@
 .rrec-nav-bar {
   background: #404040;
   color: white;
+  padding-bottom: 1%;
+  padding: 1%;
 }
 
 h1 {
   font-size: 24px;
   margin-top: 1%;
   margin-bottom: 1%;
+}
+
+@media only screen and (max-width: 900px) {
+  h1 {
+    font-size: 12px;
+  }
 }

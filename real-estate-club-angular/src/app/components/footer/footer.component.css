@@ -1,0 +1,27 @@
+.rrec-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #404040;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  height: 10%;
+  padding: 1%;
+}
+
+.rrec-footer-content {
+  width: 90%;
+}
+
+.rrec-footer-list {
+  list-style-type: circle;
+}
+
+@media only screen and (max-width: 900px) {
+  .rrec-footer {
+    font-size: 12px;
+    height: auto;
+  }
+}
