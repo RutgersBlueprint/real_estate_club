@@ -1,6 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
 body {
-  font-family: "Times New Roman", Times, serif;
+  background: url("./app/assets/background-image.jpg") no-repeat center center
+    fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .test {
@@ -9,11 +13,6 @@ body {
   border-style: solid;
 }
 
-html {
-  background: url("./app/assets/background-image.jpg") no-repeat center center
-    fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+* {
+  font-family: "Times New Roman", Times, serif;
 }
