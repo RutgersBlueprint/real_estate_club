@@ -13,6 +13,7 @@ import { ExcutiveTileComponent } from "./components/executive-tile/executive-til
 import { AlumniComponent } from './pages/alumni/alumni.component';
 import { AlumniTileComponent } from './components/alumni-tile/alumni-tile.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { UpcomingEventsComponent } from './pages/upcoming-events/upcoming-events.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ContactComponent } from './pages/contact/contact.component';
     ExcutiveTileComponent,
     AlumniComponent,
     AlumniTileComponent,
-    ContactComponent
+    ContactComponent,
+    UpcomingEventsComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
