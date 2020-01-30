@@ -10,6 +10,8 @@ import { FooterComponent } from "./components/footer/footer.component";
 import { AboutComponent } from "./pages/about/about.component";
 import { ExecutivesComponent } from "./pages/executives/executives.component";
 import { ExcutiveTileComponent } from "./components/executive-tile/executive-tile.component";
+import { AlumniComponent } from './pages/alumni/alumni.component';
+import { AlumniTileComponent } from './components/alumni-tile/alumni-tile.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { ExcutiveTileComponent } from "./components/executive-tile/executive-til
     FooterComponent,
     AboutComponent,
     ExecutivesComponent,
-    ExcutiveTileComponent
+    ExcutiveTileComponent,
+    AlumniComponent,
+    AlumniTileComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
