@@ -7,6 +7,10 @@ body {
   background-size: cover;
 }
 
+.rrec-second-underline {
+  border-bottom: 4px solid;
+}
+
 .test {
   border-color: black;
   border-width: 1px;
