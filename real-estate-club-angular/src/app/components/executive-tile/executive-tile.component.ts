@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, Input } from "@angular/core";
 
 @Component({
   selector: "app-executive-tile",
@@ -8,5 +8,7 @@ import { Component, OnInit } from "@angular/core";
 export class ExcutiveTileComponent implements OnInit {
   constructor() {}
 
+  @Input() label: String;
+  @Input() image: String;
   ngOnInit() {}
 }
