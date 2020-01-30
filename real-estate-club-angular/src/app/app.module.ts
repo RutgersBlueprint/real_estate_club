@@ -12,6 +12,7 @@ import { ExecutivesComponent } from "./pages/executives/executives.component";
 import { ExcutiveTileComponent } from "./components/executive-tile/executive-tile.component";
 import { AlumniComponent } from './pages/alumni/alumni.component';
 import { AlumniTileComponent } from './components/alumni-tile/alumni-tile.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { AlumniTileComponent } from './components/alumni-tile/alumni-tile.compon
     ExecutivesComponent,
     ExcutiveTileComponent,
     AlumniComponent,
-    AlumniTileComponent
+    AlumniTileComponent,
+    ContactComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
