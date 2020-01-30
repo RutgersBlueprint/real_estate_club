@@ -11,90 +11,13 @@
       </h1>
     </div>
 
-    <!-- Component Window -->
-    <div class="bg-blue-200 flex flex-col h-full w-10/12 my-8">
-      <!-- Component -->
-      <div class="flex flex-col bg-blue-800">
-        <!-- Header -->
-        <div class="w-full text-center bg-gray-400">
-          <p class="rrec-upcoming-event-tile-title ">Upcoming Club Events</p>
-        </div>
-        <!-- Content -->
-        <div class="flex flex-row">
-          <div class="flex flex-col w-full">
-            <!-- Single Post -->
-            <div class="w-full bg-red-300 flex justify-center">
-              <div class="w-full m-4 bg-purple-500 flex">
-                <!-- Date -->
-                <div
-                  class="bg-red-700 w-3/12 h-full flex justify-end items-center"
-                >
-                  <p class="text-center rrec-upcoming-events-meeting-date">
-                    tues<br /><span style="font-size: 55px;">04</span>
-                  </p>
-                </div>
-                <!-- Meeting Content -->
-                <div class="flex flex-col bg-yellow-600 w-full">
-                  <div class="w-full bg-blue-500 p-4">
-                    <p class="rrec-upcoming-events-meeting">
-                      Weekly Club Meeting Here
-                    </p>
-                  </div>
-                  <div class="w-full bg-blue-800 p-4">
-                    <p class="rrec-upcoming-events-meeting-info">
-                      Insert Description Here
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="w-4/12 h-48 bg-green-500 flex justify-center items-center"
-          >
-            content
-          </div>
-        </div>
-      </div>
-    </div>
+    <app-upcoming-event-tile
+      [className]="'h-full w-10/12 test'"
+      title="Upcoming Club Events"
+    ></app-upcoming-event-tile>
+    <app-upcoming-event-tile
+      [className]="'h-full w-10/12 test'"
+      title="Upcoming Department Events"
+    ></app-upcoming-event-tile>
   </div>
 </div>
-
-<!--
-    <div class="flex items-center justify-center">
-      <h1 class="rrec-window-title uppercase">
-        U<span class="rrec-second-underline">pcoming Event</span>s
-      </h1>
-    </div>
-    <div class="flex w-full flex-col items-center">
-      <div class="w-10/12 test h-auto flex flex-col items-center">
-        <h2 class="text-center uppercase underline">Upcoming Club Events</h2>
-        <div class="flex flex-row w-auto h-full">
-          <div class="flex flex-col w-auto h-full">
-            <div class="flex flex-row h-full w-auto justify-center items-end">
-              <div
-                class="rrec-upcoming-events-meeting-label p-4 bg-blue-800 text-center"
-              >
-                tues<br />
-                <span class="rrec-upcoming-events-meeting-date">04</span>
-              </div>
-              <div class=" w-auto test flex flex-col">
-                <p class="rrec-upcoming-events-meeting test w-auto">
-                  Weekly Meeting
-                  Hereasdfasfsadfasdfsadfasfsddsasdfsadfasdfasdfsafsdafsdfasdfsafs
-                </p>
-                <p class="rrec-upcoming-events-meeting-info test w-auto">
-                  insert description sadfasfsadfasdfasfasfsadfsdfsadfasdf
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="w-5/12 h-12/12 bg-gray-600 py-2 flex justify-center">
-            <div class="bg-blue-500 w-10/12 h-64">content</div>
-          </div>
-        </div>
-      </div>
-    </div>
--->

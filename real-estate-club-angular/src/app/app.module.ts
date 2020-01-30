@@ -14,6 +14,8 @@ import { AlumniComponent } from './pages/alumni/alumni.component';
 import { AlumniTileComponent } from './components/alumni-tile/alumni-tile.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { UpcomingEventsComponent } from './pages/upcoming-events/upcoming-events.component';
+import { UpcomingEventTileComponent } from './components/upcoming-event-tile/upcoming-event-tile.component';
+import { UpcomingEventPostComponent } from './components/upcoming-event-post/upcoming-event-post.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { UpcomingEventsComponent } from './pages/upcoming-events/upcoming-events
     AlumniComponent,
     AlumniTileComponent,
     ContactComponent,
-    UpcomingEventsComponent
+    UpcomingEventsComponent,
+    UpcomingEventTileComponent,
+    UpcomingEventPostComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
