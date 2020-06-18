@@ -1,3 +1,17 @@
 .rrec-website {
   font-family: "Times New Roman", Times, serif;
 }
+.rrec-nav-bar {
+  background: #404040;
+  color: white;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+@media only screen and (max-width: 900px) {
+  h1 {
+    font-size: 12px;
+  }
+}

@@ -1,9 +1,26 @@
-<div class="rrec-website h-screen flex flex-col min-h-screen">
-  <app-nav-bar [className]="'h-32 sticky top-0'"></app-nav-bar>
-  <!-- <app-home [className]="'h-full'"></app-home> -->
-  <!-- <app-about [className]="'h-full'"></app-about> -->
-  <!-- <app-executives [className]="'h-full'"></app-executives> -->
-  <!-- <app-alumni [className]="'h-auto'"></app-alumni> -->
-  <router-outlet [className]="'h-full'"></router-outlet>
+<div class="rrec-website overflow-x-hidden">
+  <div class="rrec-nav-bar w-screen h-32 sticky top-0">
+    <div class="flex flex-row items-center justify-center">
+      <h1 class="text-center uppercase mt-2">
+        rutgers university<br />real estate club
+      </h1>
+    </div>
+    <div class="flex flex-row items-center justify-around ">
+      <app-nav-link label="home" link="/"></app-nav-link>
+      <app-nav-link label="about" link="/about"></app-nav-link>
+      <app-nav-link label="executives" link="/executives"></app-nav-link>
+      <app-nav-link label="alumni" link="/alumni"></app-nav-link>
+      <app-nav-link label="contact" link="/contact"></app-nav-link>
+      <app-nav-link
+        label="upcoming events"
+        link="/upcoming-events"
+      ></app-nav-link>
+    </div>
+  </div>
+  <app-home></app-home>
+  <app-about></app-about>
+  <app-executives></app-executives>
+  <app-alumni></app-alumni>
+  <app-contact></app-contact>
   <app-footer [className]="'h-32'"></app-footer>
 </div>
