@@ -1,25 +1,22 @@
 <div class="rrec-website overflow-x-hidden">
-  <div class="rrec-nav-bar w-screen h-32 sticky top-0">
+  <div class="rrec-nav-bar w-screen h-32 sticky top-0 fixed">
     <div class="flex flex-row items-center justify-center">
       <h1 class="text-center uppercase mt-2">
         rutgers university<br />real estate club
       </h1>
     </div>
     <div class="flex flex-row items-center justify-around ">
-      <app-nav-link label="home" link="/"></app-nav-link>
-      <app-nav-link label="about" link="/about"></app-nav-link>
-      <app-nav-link label="executives" link="/executives"></app-nav-link>
-      <app-nav-link label="alumni" link="/alumni"></app-nav-link>
-      <app-nav-link label="contact" link="/contact"></app-nav-link>
-      <app-nav-link
-        label="upcoming events"
-        link="/upcoming-events"
-      ></app-nav-link>
+      <button [ngxScrollTo]="'#destination'" class="rrec-nav-link uppercase">home</button>
+      <button [ngxScrollTo]="'#destination'" class="rrec-nav-link uppercase">about</button>
+      <button [ngxScrollTo]="'#destination'" class="rrec-nav-link uppercase">executives</button>
+      <button [ngxScrollTo]="'#destination'" class="rrec-nav-link uppercase">alumni</button>
+      <button [ngxScrollTo]="'#destination'" class="rrec-nav-link uppercase">contacts</button>
+      <button [ngxScrollTo]="'#destination'" class="rrec-nav-link uppercase">upcoming events</button>
     </div>
   </div>
   <app-home></app-home>
   <app-about></app-about>
-  <app-executives></app-executives>
+  <app-executives  id="destination"></app-executives>
   <app-alumni></app-alumni>
   <app-contact></app-contact>
   <app-footer [className]="'h-32'"></app-footer>

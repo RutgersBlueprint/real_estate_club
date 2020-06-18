@@ -16,6 +16,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { UpcomingEventsComponent } from './pages/upcoming-events/upcoming-events.component';
 import { UpcomingEventTileComponent } from './components/upcoming-event-tile/upcoming-event-tile.component';
 import { UpcomingEventPostComponent } from './components/upcoming-event-post/upcoming-event-post.component';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { UpcomingEventPostComponent } from './components/upcoming-event-post/upc
     UpcomingEventTileComponent,
     UpcomingEventPostComponent
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, ScrollToModule.forRoot()],
+  exports: [ScrollToModule],
   providers: [],
   bootstrap: [AppComponent]
 })
