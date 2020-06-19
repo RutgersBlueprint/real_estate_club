@@ -17,6 +17,11 @@ import { UpcomingEventsComponent } from './pages/upcoming-events/upcoming-events
 import { UpcomingEventTileComponent } from './components/upcoming-event-tile/upcoming-event-tile.component';
 import { UpcomingEventPostComponent } from './components/upcoming-event-post/upcoming-event-post.component';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+import {
+  FontAwesomeModule,
+  FaIconLibrary,
+} from "@fortawesome/angular-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 @NgModule({
   declarations: [
@@ -35,9 +40,13 @@ import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
     UpcomingEventTileComponent,
     UpcomingEventPostComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, ScrollToModule.forRoot()],
+  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule, ScrollToModule.forRoot()],
   exports: [ScrollToModule],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule {
+  constructor(private library: FaIconLibrary) {
+    library.addIcons(faBars);
+  }
+}
