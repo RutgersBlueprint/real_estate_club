@@ -21,8 +21,22 @@
       >
         <fa-icon [icon]="['fas', 'bars']"></fa-icon>
       </button>
-      
   </div>
+  <div
+      id="main-menu"
+      class=" w-full lg:hidden lg:block flex-grow lg:overflow-y-auto lg:flex lg:items-center lg:flex-row lg:justify-end main-menu-slider lg:w-auto bg-white  pl-4 pr-4 sticky top-0"
+    >
+      <div
+        class="text-sm flex flex-col items-start lg:flex-row lg:items-center lg:justify-center lg:text-4xl "
+      >
+      <button [ngxScrollTo]="'#destination'" class="uppercase font-bold m-4">home</button>
+      <button [ngxScrollTo]="'#destination'" class="uppercase font-bold m-4">about</button>
+      <button [ngxScrollTo]="'#destination'" class="uppercase font-bold m-4">executives</button>
+      <button [ngxScrollTo]="'#destination'" class="uppercase font-bold m-4">alumni</button>
+      <button [ngxScrollTo]="'#destination'" class="uppercase font-bold m-4">contacts</button>
+      <button [ngxScrollTo]="'#destination'" class="uppercase font-bold m-4">upcoming events</button>
+      </div>
+    </div>
   <app-home></app-home>
   <app-about></app-about>
   <app-executives></app-executives>

@@ -21,6 +21,10 @@
     overflow-y: hidden;
   }
 
+  .main-menu-slider.expanded {
+    height: auto;
+  }
+
   .rrec-links {
     visibility: hidden;
     width: 0px;
