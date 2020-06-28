@@ -6,8 +6,6 @@
   color: white;
 }
 
-
-
 .rrec-nav-link {
   font-size: 24px;
   text-decoration: none;
@@ -26,7 +24,6 @@
   }
 
   .rrec-links {
-    visibility: hidden;
-    width: 0px;
+    display: none;
   }
 }
