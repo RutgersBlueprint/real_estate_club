@@ -9,3 +9,17 @@
 .rrec-upcoming-events-meeting-date {
   font-size: 32px;
 }
+
+@media only screen and (max-width: 1023px) {
+  .rrec-upcoming-events-meeting {
+    font-size: 24px;
+  }
+  
+  .rrec-upcoming-events-meeting-info {
+    font-size: 18px;
+  }
+  
+  .rrec-upcoming-events-meeting-date {
+    font-size: 22px;
+  }
+}
