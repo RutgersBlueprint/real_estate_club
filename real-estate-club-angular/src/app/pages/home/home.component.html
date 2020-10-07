@@ -1,5 +1,14 @@
 <div
-  class="rrec-home h-screen p-4 flex justify-center items-center border-4 border-yellow-500"
+  class="rrec-home h-screen p-4 flex flex-col justify-center items-center"
 >
-  <img id="rrec-logo" class="lg:w-6/12 md:w-8/12 w-10/12" src="../../../assets/rrec_logo_v5.png" alt="">
+  <img id="rrec-logo" class="lg:w-3/12 md:w-3/12 w-10/12" src="../../../assets/rrec_logo_v5.png" alt="">
+  <p class="text-white text-2xl font-bold mt-24">Connect with us!</p>
+  <div class="flex flex-row justify-between">
+    <div class="flex flex-row justify-around bg-white rounded shadow-xl p-3">
+      <fa-icon [icon]="faFacebookF" class="mx-4 text-red-600" size="2x"></fa-icon>
+      <fa-icon [icon]="faLinkedin" class="mx-4 text-red-600" size="2x"></fa-icon>
+      <fa-icon [icon]="faEnvelope" class="mx-4 text-red-600" size="2x"></fa-icon>
+    </div>
+
+  </div>
 </div>
