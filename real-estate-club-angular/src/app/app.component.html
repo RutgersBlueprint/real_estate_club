@@ -4,7 +4,7 @@
 >
     <div class="flex flex-row items-center justify-center self-center">
       <h1 class="text-center uppercase m-4 lg:text-2xl text-base">
-        rutgers university<br />real estate club
+        rutgers <br />real estate club
       </h1>
     </div>
     <div class="rrec-links flex flex-row items-center justify-around">
@@ -54,16 +54,16 @@
 </nav>
 
 <nav
-  class="rrec-nav-bar h-auto sticky top-0 flex flex-col justify-center shadow-xl"
+  class="rrec-nav-bar h-auto py-6 pl-2 sticky top-0 flex flex-col justify-center shadow-xl"
   *ngIf="!isDesktop"
 >
   <div class="flex flex-row justify-between px-8">
     <button
-      class="text-center text-2xl self-center font-bold uppercase"
+      class="text-center text-2xl self-center uppercase"
       [ngxScrollTo]="landing"
       [ngxScrollToOffset]="-130"
     >
-    rutgers university<br />real estate club
+    rrec
   </button>
     <button class="" (click)="openMobileMenu()">
       <fa-icon size="2x" [icon]="['fas', 'bars']"></fa-icon>
@@ -75,7 +75,7 @@
         <button
         [ngxScrollTo]="'#home'"
         [ngxScrollToOffset]="-70"
-        class="rrec-nav-link uppercase"
+        class="rrec-nav-link uppercase w-full text-right p-4"
       >
         home
       </button>
@@ -84,7 +84,7 @@
         <button
         [ngxScrollTo]="'#about'"
         [ngxScrollToOffset]="-70"
-        class="rrec-nav-link uppercase"
+        class="rrec-nav-link uppercase w-full text-right p-4"
       >
         about
       </button>
@@ -93,7 +93,7 @@
         <button
         [ngxScrollTo]="'#executives'"
         [ngxScrollToOffset]="-70"
-        class="rrec-nav-link uppercase"
+        class="rrec-nav-link uppercase w-full text-right p-4"
       >
         executives
       </button>
@@ -102,7 +102,7 @@
         <button
         [ngxScrollTo]="'#alumni'"
         [ngxScrollToOffset]="-70"
-        class="rrec-nav-link uppercase"
+        class="rrec-nav-link uppercase w-full text-right p-4"
       >
         alumni
       </button>
@@ -111,7 +111,7 @@
         <button
         [ngxScrollTo]="'#contacts'"
         [ngxScrollToOffset]="-70"
-        class="rrec-nav-link uppercase"
+        class="rrec-nav-link uppercase w-full text-right p-4"
       >
         contacts
       </button>
@@ -120,7 +120,7 @@
         <button
         [ngxScrollTo]="'#upcoming-events'"
         [ngxScrollToOffset]="-70"
-        class="rrec-nav-link uppercase"
+        class="rrec-nav-link uppercase w-full text-right p-4"
       >
         upcoming events
       </button>
