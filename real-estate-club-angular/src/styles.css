@@ -3,8 +3,9 @@ body {
 }
 
 .rrec-window-title {
-  text-decoration: underline;
+  /* text-decoration: underline; */
   font-size: 48px;
+  margin-top: 2%;
 }
 .rrec-second-underline {
   border-bottom: 4px solid;
@@ -17,7 +18,7 @@ body {
 }
 
 * {
-  font-family: "Times New Roman", Times, serif;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 

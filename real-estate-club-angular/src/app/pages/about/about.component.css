@@ -5,36 +5,32 @@
 }
 
 .rrec-about-window {
-  border-width: 3px;
-  border-color: black;
-  border-style: solid;
-  border-left: 10px double;
-  border-right: 10px double;
-}
 
-.rrec-about-window h1 {
 }
 
 .rrec-about-tile {
-  background-color: #c4c4c4;
   font-size: 24px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25),
-    0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .rrec-about-tile h2 {
   text-align: center;
-  color: white;
-  font-size: 36px;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: black;
+  font-size: 28px;
 }
 
-.rrec-about-tile p {
+.rrec-about-tile p, .rrec-about-tile ul {
   text-align: center;
+  color: rgb(73, 73, 73);
+}
+
+.rrec-about-tile {
+  font-size: 18px;
+  border-bottom-width: 6px;
 }
 
 .rrec-about-tile li {
-  list-style-type: decimal;
+  /* list-style-type: disc;
+  list-style-position: inside; */
 }
 
 @media only screen and (max-width: 1300px) {
