@@ -2,3 +2,12 @@
   /* background: #404040;
   color: white; */
 }
+.carousel-control-prev-icon{
+  background-image: url('https://apufpel.com.br/assets/img/seta_prim.png')
+}
+.carousel-control-next-icon{
+ background-image: url('https://apufpel.com.br/assets/img/seta_ult.png')
+}
+.carousel-indicators li {
+  background-color: red !important;
+}

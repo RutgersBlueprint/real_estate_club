@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-executives',
   templateUrl: './executives.component.html',
-  styleUrls: ['./executives.component.css']
+  styleUrls: ['./executives.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
 export class ExecutivesComponent implements OnInit {
   executives: Executive[];
