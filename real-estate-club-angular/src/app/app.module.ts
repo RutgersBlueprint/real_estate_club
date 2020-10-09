@@ -22,6 +22,7 @@ import {
   FaIconLibrary,
 } from "@fortawesome/angular-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
     UpcomingEventTileComponent,
     UpcomingEventPostComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule, ScrollToModule.forRoot()],
+  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule, ScrollToModule.forRoot(), NgbModule],
   exports: [ScrollToModule],
   providers: [],
   bootstrap: [AppComponent]

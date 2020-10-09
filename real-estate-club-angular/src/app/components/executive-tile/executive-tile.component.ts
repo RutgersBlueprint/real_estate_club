@@ -13,4 +13,5 @@ export class ExcutiveTileComponent implements OnInit {
   @Input() label: string;
   @Input() image: string;
   ngOnInit() {}
+
 }
