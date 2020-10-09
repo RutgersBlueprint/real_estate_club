@@ -8,7 +8,9 @@ import { Component, OnInit, Input } from "@angular/core";
 export class ExcutiveTileComponent implements OnInit {
   constructor() {}
 
-  @Input() label: String;
-  @Input() image: String;
+  @Input() description: string;
+  @Input() headline: string;
+  @Input() label: string;
+  @Input() image: string;
   ngOnInit() {}
 }
