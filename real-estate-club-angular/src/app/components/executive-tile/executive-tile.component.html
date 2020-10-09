@@ -1,6 +1,8 @@
-<div class="rrec-executive-tile shadow border-red-600 flex flex-col m-8 p-6 w-auto bg-black">
+<div class="rrec-executive-tile shadow border-red-600 flex flex-col m-8 p-6 w-auto items-center">
     <img src="{{ image }}" alt="" class="rrec-executive-image w-40 h-40 rounded-full shadow-md" />
-  <div class="rrec-executive-label w-full">
-    <p class="uppercase w-full text-center pt-2">{{ label }}</p>
+  <div class="rrec-executive-label w-full mt-3">
+    <p class="w-full text-center pt-2 font-bold">{{ label }}</p>
+    <p class="w-full text-center text-sm pt-2 italic">{{ headline }}</p>
+    <p class="w-full text-left text-xs pt-2">{{ description }}</p>
   </div>
 </div>
