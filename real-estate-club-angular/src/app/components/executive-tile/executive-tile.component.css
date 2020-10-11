@@ -3,6 +3,10 @@
   /* min-height: 550px; */
 }
 
-.rrec-executive-image-container {
-
+.rrec-executive-image {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  object-fit: cover;
 }

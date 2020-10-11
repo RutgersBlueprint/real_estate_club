@@ -11,3 +11,8 @@
 .carousel-indicators li {
   background-color: red !important;
 }
+
+.carousel:focus {
+  outline: none;
+  border: 0;
+}

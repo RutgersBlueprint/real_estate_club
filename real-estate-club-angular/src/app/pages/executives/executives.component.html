@@ -3,8 +3,7 @@
 >
   <h1 class="text-4xl text-center mt-6">Who are we?</h1>
 
-
-  <ngb-carousel class="lg:w-6/12 md:w-6/12 w-full p-6">
+  <ngb-carousel class="lg:w-9/12 md:w-9/12 w-full px-24 py-4">
     <ng-template ngbSlide *ngFor="let executive of executives">
       <app-executive-tile
         label="{{executive.name}}"
@@ -15,8 +14,6 @@
     </ng-template>
   </ngb-carousel>
 
-
-  
   <div
     class="flex flex-wrap h-auto justify-center items-center mx-20 text-gray-700"
   ></div>
