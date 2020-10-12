@@ -9,7 +9,7 @@
  background-image: url('https://apufpel.com.br/assets/img/seta_ult.png')
 }
 .carousel-indicators li {
-  background-color: red !important;
+  background-color: rgb(0, 0, 0) !important;
 }
 
 .carousel:focus {

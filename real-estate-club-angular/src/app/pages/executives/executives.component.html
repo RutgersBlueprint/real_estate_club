@@ -1,11 +1,10 @@
 <div
-  class="rrec-executives h-auto lg:px-16 lg:py-4 p-2 flex flex-col justify-start items-center bg-white"
+  class="rrec-executives h-auto lg:px-16 lg:py-4 p-2 flex flex-col justify-start items-center bg-gray-500"
 >
-  <h1 class="text-4xl text-center mt-6">Who are we?</h1>
-
-  <ngb-carousel class="lg:w-9/12 md:w-9/12 w-full px-24 py-4">
+  <ngb-carousel class="lg:w-9/12 md:w-9/12 w-full px-24 py-12">
     <ng-template ngbSlide *ngFor="let executive of executives">
       <app-executive-tile
+        [isDesktop]="isDesktop"
         label="{{executive.name}}"
         headline="{{executive.headline}}"
         description="{{executive.description}}"
@@ -13,8 +12,4 @@
       ></app-executive-tile>
     </ng-template>
   </ngb-carousel>
-
-  <div
-    class="flex flex-wrap h-auto justify-center items-center mx-20 text-gray-700"
-  ></div>
 </div>
