@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, HostListener, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-executives',
@@ -8,8 +8,18 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class ExecutivesComponent implements OnInit {
   executives: Executive[];
+  isDesktop: boolean = false;
   constructor() { 
 
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    if(window.innerWidth < 1400){
+      this.isDesktop = false;
+    } else {
+      this.isDesktop = true;
+    }
   }
 
   ngOnInit() {

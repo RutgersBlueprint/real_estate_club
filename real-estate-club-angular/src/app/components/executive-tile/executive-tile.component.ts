@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from "@angular/core";
 })
 export class ExcutiveTileComponent implements OnInit {
   constructor() {}
-
+  @Input() isDesktop: boolean = false;
   @Input() description: string;
   @Input() headline: string;
   @Input() label: string;
