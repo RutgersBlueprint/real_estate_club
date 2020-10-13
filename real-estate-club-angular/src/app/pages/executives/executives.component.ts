@@ -10,7 +10,11 @@ export class ExecutivesComponent implements OnInit {
   executives: Executive[];
   isDesktop: boolean = false;
   constructor() { 
-
+    if(window.innerWidth < 1000){
+      this.isDesktop = false;
+    } else {
+      this.isDesktop = true;
+    }
   }
 
   @HostListener('window:resize', ['$event'])
