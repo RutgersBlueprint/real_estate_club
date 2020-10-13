@@ -15,7 +15,7 @@ export class ExecutivesComponent implements OnInit {
 
   @HostListener('window:resize', ['$event'])
   onResize(event) {
-    if(window.innerWidth < 1400){
+    if(window.innerWidth < 1000){
       this.isDesktop = false;
     } else {
       this.isDesktop = true;
