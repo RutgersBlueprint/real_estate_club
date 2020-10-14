@@ -1,16 +1,4 @@
-.rrec-upcoming-events {
-  background-color: white;
-  /* background-color: rgb(26, 26, 26, 0.8); */
-  color: black;
-}
 
-.rrec-upcoming-events-window {
-  border-width: 3px;
-  border-color: black;
-  border-style: solid;
-  border-left: 10px double;
-  border-right: 10px double;
-}
 
 .responsive-iframe-container {
   position: relative;
