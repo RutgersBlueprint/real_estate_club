@@ -8,15 +8,15 @@
     <div class="rrec-links flex flex-row items-center justify-around w-6/12">
       <button
         [ngxScrollTo]="'#home'"
-        [ngxScrollToOffset]="-180"
-        class="rrec-nav-link uppercase p-3"
+        [ngxScrollToOffset]="-70"
+        class="rrec-nav-link bg-red-700 p-3 rounded-lg shadow uppercase"
         #homeButtonDT
       >
         home
       </button>
       <button
         [ngxScrollTo]="'#about'"
-        [ngxScrollToOffset]="-180"
+        [ngxScrollToOffset]="-70"
         class="rrec-nav-link uppercase p-3"
         #aboutButtonDT
       >
@@ -24,7 +24,7 @@
       </button>
       <button
         [ngxScrollTo]="'#executives'"
-        [ngxScrollToOffset]="-180"
+        [ngxScrollToOffset]="-70"
         class="rrec-nav-link uppercase p-3"
         #executivesButtonDT
       >
@@ -32,15 +32,15 @@
       </button>
       <button
         [ngxScrollTo]="'#alumni'"
-        [ngxScrollToOffset]="-180"
+        [ngxScrollToOffset]="-70"
         class="rrec-nav-link uppercase p-3"
         #alumniButtonDT
       >
         alumni
       </button>
       <button
-      [ngxScrollTo]="'#upcoming-events'"
-      [ngxScrollToOffset]="-180"
+      [ngxScrollTo]="'#events'"
+      [ngxScrollToOffset]="-70"
       class="rrec-nav-link uppercase"
       #eventsButtonDT
       >
@@ -48,7 +48,7 @@
       </button>
       <button
         [ngxScrollTo]="'#contact'"
-        [ngxScrollToOffset]="-180"
+        [ngxScrollToOffset]="-70"
         class="rrec-nav-link uppercase p-3"
         #contactButtonDT
       >
@@ -66,6 +66,7 @@
       class="text-center text-2xl self-center uppercase"
       [ngxScrollTo]="'#home'"
       [ngxScrollToOffset]="-70"
+      (click)="openMobileMenu()"
     >
     rrec
   </button>
@@ -80,6 +81,7 @@
         [ngxScrollTo]="'#home'"
         [ngxScrollToOffset]="-70"
         class="rrec-nav-link uppercase w-full text-right p-4"
+        (click)="openMobileMenu()"
       >
         home
       </button>
@@ -89,6 +91,7 @@
         [ngxScrollTo]="'#about'"
         [ngxScrollToOffset]="-70"
         class="rrec-nav-link uppercase w-full text-right p-4"
+        (click)="openMobileMenu()"
       >
         about
       </button>
@@ -98,6 +101,7 @@
         [ngxScrollTo]="'#executives'"
         [ngxScrollToOffset]="-70"
         class="rrec-nav-link uppercase w-full text-right p-4"
+        (click)="openMobileMenu()"
       >
         executives
       </button>
@@ -107,8 +111,19 @@
         [ngxScrollTo]="'#alumni'"
         [ngxScrollToOffset]="-70"
         class="rrec-nav-link uppercase w-full text-right p-4"
+        (click)="openMobileMenu()"
       >
         alumni
+      </button>
+      </li>
+      <li>
+        <button
+        [ngxScrollTo]="'#events'"
+        [ngxScrollToOffset]="-70"
+        class="rrec-nav-link uppercase w-full text-right p-4"
+        (click)="openMobileMenu()"
+      >
+        upcoming events
       </button>
       </li>
       <li>
@@ -116,39 +131,31 @@
         [ngxScrollTo]="'#contact'"
         [ngxScrollToOffset]="-70"
         class="rrec-nav-link uppercase w-full text-right p-4"
+        (click)="openMobileMenu()"
       >
         contacts
-      </button>
-      </li>
-      <li>
-        <button
-        [ngxScrollTo]="'#upcoming-events'"
-        [ngxScrollToOffset]="-70"
-        class="rrec-nav-link uppercase w-full text-right p-4"
-      >
-        upcoming events
       </button>
       </li>
     </ul>
   </div>
 </nav>
-<div #home>
-  <app-home id="home"></app-home>
+<div #home id="home">
+  <app-home></app-home>
 </div>
-<div #about>
-  <app-about id="about"></app-about>
+<div #about id="about">
+  <app-about></app-about>
 </div>
-<div #executives>
-  <app-executives id="executives"></app-executives>
+<div #executives id="executives">
+  <app-executives></app-executives>
 </div>
-<div #alumni>
-  <app-alumni id="alumni"></app-alumni>
+<div #alumni id="alumni">
+  <app-alumni></app-alumni>
 </div>
-<div #events>
-  <app-upcoming-events id="upcoming-events"></app-upcoming-events>
+<div #events id="events">
+  <app-upcoming-events></app-upcoming-events>
 </div>
-<div #contact>
-  <app-contact id="contact"></app-contact>
+<div #contact id="contact">
+  <app-contact></app-contact>
 </div>
 
 <app-footer [className]="'h-32'"></app-footer>
