@@ -2,6 +2,10 @@
   font-family: "Times New Roman", Times, serif;
 }
 
+.rrec-links button:hover {
+  font-style: italic;
+}
+
 .rrec-nav-bar-dark {
   background: transparent;
   box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.9);
