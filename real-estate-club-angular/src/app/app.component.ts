@@ -1,4 +1,6 @@
 import { Component, ElementRef, HostListener, QueryList, ViewChild, ViewChildren } from '@angular/core';
+import { faFacebookF, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +9,7 @@ import { Component, ElementRef, HostListener, QueryList, ViewChild, ViewChildren
 })
 
 export class AppComponent {
+  @ViewChild('navBar') navBar: ElementRef;
   @ViewChild('mobileMenu') mobileMenu: ElementRef
   @ViewChildren('home, about, executives, alumni, events, contact') sections: QueryList<ElementRef>; 
   @ViewChildren('homeButtonDT, aboutButtonDT, executivesButtonDT, alumniButtonDT, eventsButtonDT, contactButtonDT') buttons: QueryList<ElementRef>; 
@@ -18,6 +21,10 @@ export class AppComponent {
   @ViewChild('contactButtonDT') contactButtonDT: ElementRef;
   isDesktop: Boolean;
   isMobileMenuOpen = false;
+  faFacebookF = faFacebookF;
+  faLinkedin = faLinkedin;
+  faEnvelope = faEnvelope;
+  faInstagram = faInstagram;
 
   constructor() { // detect screen size
     if(window.innerWidth < 1450){
@@ -58,6 +65,11 @@ export class AppComponent {
 
   @HostListener('window:scroll', ['$event'])
   onScroll(event) {
+    if(window.pageYOffset > 800 && this.isDesktop){
+      this.navBar.nativeElement.className = "rrec-nav-bar-dark flex flex-row justify-between items-center h-20 sticky top-0 shadow-xl"
+    } else {
+      this.navBar.nativeElement.className = "rrec-nav-bar-clear flex flex-row justify-between items-center h-20 sticky top-0 shadow-xl"
+    }
     if(this.isDesktop){
       const activeSection = this.sections.toArray().findIndex(section => this.isElementInViewport(section.nativeElement));
       const areas = 'home, about, executives, alumni, events, contact';
