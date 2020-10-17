@@ -25,6 +25,13 @@
   color: white;
 }
 
+.ng-fa-icon:hover {
+    color: red !important;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
 @media only screen and (max-width: 1023px) {
   .main-menu-slider {
     transition: height 400ms ease;
