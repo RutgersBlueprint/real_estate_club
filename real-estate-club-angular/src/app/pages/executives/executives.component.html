@@ -1,7 +1,7 @@
 <div
-  class="p-6 flex lg:flex-row md:flex-row  sm:flex-col-reverse flex-col-reverse justify-around bg-gray-500"
+  class="p-6 h-screen flex lg:flex-row md:flex-row  sm:flex-col-reverse flex-col-reverse justify-center items-center bg-gray-500"
 >
-  <ngb-carousel class="lg:w-7/12 md:w-7/12 w-full py-12">
+  <ngb-carousel class="lg:w-7/12 md:w-7/12 w-full">
     <ng-template ngbSlide *ngFor="let executive of executives">
       <app-executive-tile
         [isDesktop]="isDesktop"
@@ -12,6 +12,6 @@
       ></app-executive-tile>
     </ng-template>
   </ngb-carousel>
-  <p class="text-6xl text-center font-bold m-4">Get to know us</p>
+  <p class="text-6xl text-center font-bold m-4 self-start">Get to know us</p>
 
 </div>
