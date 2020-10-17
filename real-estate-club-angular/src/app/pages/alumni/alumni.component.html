@@ -1,41 +1,59 @@
 <div class="p-6 flex flex-col justify-center items-center bg-white">
+  
+
+  
+  
+  
+  
   <p class="text-6xl text-center font-bold mt-4 mb-0">Get the scoop</p>
   <p class="text-lg text-center font-bold italic mt-0">Alumni Testimonies</p>
 
   <div class="flex flex-wrap justify-center">
-    <div class="flex flex-col items-center my-6 mx-12">
-      <img src="../../../assets/Muhammed.PNG" class="rounded-full h-48 w-48 shadow" alt="">
-      <p class="text-center text-xl text-black mt-3 mb-1">John Smith</p>
-      <p class="text-center text-sm text-black mb-2">Graduated RU NB 2020</p>
-      <button class="bg-green-500 rounded py-2 px-3 shadow text-white hover:bg-green-400">view</button>
-    </div>
-    <div class="flex flex-col items-center my-6 mx-12">
-      <img src="../../../assets/Muhammed.PNG" class="rounded-full h-48 w-48 shadow" alt="">
-      <p class="text-center text-xl text-black mt-3 mb-1">John Smith</p>
-      <p class="text-center text-sm text-black mb-2">Graduated RU NB 2020</p>
-      <button class="bg-green-500 rounded py-2 px-3 shadow text-white hover:bg-green-400">view</button>
-    </div>
-    <div class="flex flex-col items-center my-6 mx-12">
-      <img src="../../../assets/Muhammed.PNG" class="rounded-full h-48 w-48 shadow" alt="">
-      <p class="text-center text-xl text-black mt-3 mb-1">John Smith</p>
-      <p class="text-center text-sm text-black mb-2">Graduated RU NB 2020</p>
-      <button class="bg-green-500 rounded py-2 px-3 shadow text-white hover:bg-green-400">view</button>
+    <div class="flex flex-col items-center my-6 mx-12" *ngFor="let al of alumni_row_1">
+      <img src="{{al.image}}" class="rounded-full h-48 w-48 shadow" alt="">
+      <p class="text-center text-xl text-black mt-3 mb-1">{{al.name}}</p>
+      <p class="text-center text-sm text-black mb-2">{{al.headline}}</p>
+      <button class="bg-green-500 rounded py-2 px-3 shadow text-white hover:bg-green-400" (click)="open(content, al)">view</button>
     </div>
   </div>
 
   <div class="flex flex-wrap justify-center">
-    <div class="flex flex-col items-center my-6 mx-12">
-      <img src="../../../assets/Muhammed.PNG" class="rounded-full h-48 w-48 shadow" alt="">
-      <p class="text-center text-xl text-black mt-3 mb-1">John Smith</p>
-      <p class="text-center text-sm text-black mb-2">Graduated RU NB 2020</p>
-      <button class="bg-green-500 rounded py-2 px-3 shadow text-white hover:bg-green-400">view</button>
-    </div>
-    <div class="flex flex-col items-center my-6 mx-12">
-      <img src="../../../assets/Muhammed.PNG" class="rounded-full h-48 w-48 shadow" alt="">
-      <p class="text-center text-xl text-black mt-3 mb-1">John Smith</p>
-      <p class="text-center text-sm text-black mb-2">Graduated RU NB 2020</p>
-      <button class="bg-green-500 rounded py-2 px-3 shadow text-white hover:bg-green-400">view</button>
+    <div class="flex flex-col items-center my-6 mx-12" *ngFor="let al of alumni_row_2">
+      <img src="{{al.image}}" class="rounded-full h-48 w-48 shadow" alt="">
+      <p class="text-center text-xl text-black mt-3 mb-1">{{al.name}}</p>
+      <p class="text-center text-sm text-black mb-2">{{al.headline}}</p>
+      <button class="bg-green-500 rounded py-2 px-3 shadow text-white hover:bg-green-400" (click)="open(content, al)">view</button>
     </div>
   </div>
 
 </div>
+
+<ng-template #content let-modal>
+
+  <div class="alumni-modal flex flex-col items-center justify-between text-black">
+    <div class="alumni-header flex flex-row justify-start items-center w-full p-3">
+      <img src="{{modalAlumni.image}}" class="h-20 w-20 rounded-full shadow" alt="">
+      <p class="ml-4 font-bold text-2xl">
+        {{modalAlumni.name}}
+        <br>
+        <span class="text-lg italic text-gray-700 font-normal">
+          {{modalAlumni.headline}}
+        </span>
+      </p>
+    </div>
+    <p class="alumni-body h-auto w-full py-2 px-4 italic">
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+      Earum error nulla impedit accusamus aliquam odit ipsa exercitationem veritatis, 
+      iure mollitia. Officia pariatur veritatis libero optio provident quidem 
+      cupiditate ullam est.
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+      Earum error nulla impedit accusamus aliquam odit ipsa exercitationem veritatis, 
+      iure mollitia. Officia pariatur veritatis libero optio provident quidem 
+      cupiditate ullam est."
+    </p>
+    <button (click)="modal.dismiss('Cross click')" class="bg-green-500 rounded text-white py-2 px-3 m-3 self-end">
+      Done
+    </button> 
+  </div>
+
+</ng-template>
