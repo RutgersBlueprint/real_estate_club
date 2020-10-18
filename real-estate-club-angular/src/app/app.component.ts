@@ -67,7 +67,7 @@ export class AppComponent {
   onScroll(event) {
     if(window.pageYOffset > 800 && this.isDesktop){
       this.navBar.nativeElement.className = "rrec-nav-bar-dark flex flex-row justify-between items-center h-20 sticky top-0 shadow-xl"
-    } else {
+    } else if(window.pageYOffset <= 800 && this.isDesktop){
       this.navBar.nativeElement.className = "rrec-nav-bar-clear flex flex-row justify-between items-center h-20 sticky top-0 shadow-xl"
     }
     if(this.isDesktop){
