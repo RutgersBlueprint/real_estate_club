@@ -1,16 +1,37 @@
 .rrec-website {
   font-family: "Times New Roman", Times, serif;
 }
-.rrec-nav-bar {
-  background: #404040;
+
+.rrec-links button:hover {
+  font-style: italic;
+}
+
+.rrec-nav-bar-dark {
+  background: transparent;
+  box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.9);
+  color: white;
+  z-index: 999;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+
+.rrec-nav-bar-clear {
+  background: transparent;
+  box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.0);
   color: white;
   z-index: 999;
 }
 
 .rrec-nav-link {
-  font-size: 24px;
   text-decoration: none;
   color: white;
+}
+
+.ng-fa-icon:hover {
+    color: red !important;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 @media only screen and (max-width: 1023px) {

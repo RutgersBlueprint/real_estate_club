@@ -1,8 +1,42 @@
 .rrec-executive-tile {
-  color: white;
-  font-size: 18px;
+  border-bottom-width: 6px;
+  /* min-height: 550px; */
 }
 
-.rrec-executive-image-container {
-  background-color: white;
+.rrec-executive-image {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.tile-lg {
+  height: 500px;
+  background: no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.tile {
+  min-height: 500px;
+  background: no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.bios {
+  box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.8);
+}
+
+.photo {
+  background: no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }

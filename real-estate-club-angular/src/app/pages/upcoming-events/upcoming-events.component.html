@@ -1,23 +1,24 @@
-<div
-  class="rrec-upcoming-events lg:px-16 lg:py-4 p-2 flex justify-center items-start border-4 border-blue-300"
->
-  <div
-    class="rrec-upcoming-events-window justify-center w-full h-auto flex flex-col items-center"
-  >
-    <!-- Title -->
-    <div class="flex flex-col text-center w-full">
-      <h1 class="rrec-window-title">
-        U<span class="rrec-second-underline">pcoming Event</span>s
-      </h1>
-    </div>
+<div class="p-6 flex lg:flex-row md:flex-row sm:flex-col flex-col sm:justify-center md:justify-around lg:justify-around  bg-white">
+  <p class="text-6xl text-center font-bold m-4">Get involved
+    <span class="text-base text-center font-normal text-gray-600 tracking-tight">
+      <p>
+        <span class="font-bold">
+          <br/>Meetings
+        </span> 
+        <br/>Tuesdays: 7:15PM - 8:15PM
+        <br/>Building Name & Room #
+        <br/>Campus Name
+      </p>
+    </span>
+  </p>
 
-    <app-upcoming-event-tile
-      [className]="'h-full w-10/12'"
-      title="Upcoming Club Events"
-    ></app-upcoming-event-tile>
-    <app-upcoming-event-tile
-      [className]="'h-full w-10/12'"
-      title="Upcoming Department Events"
-    ></app-upcoming-event-tile>
+
+  <div class="responsive-iframe-container flex flex-col items-center justify-center self-center border-gray-400 border-2 p-6 rounded-lg shadow lg:w-7/12 md:w-7/12 sm:w-10/12 w-10/12 m-4">
+    <iframe src="https://calendar.google.com/calendar/embed?src=realestateclubrutgers%40gmail.com&ctz=America%2FNew_York" 
+    style="border: 0" 
+    width="800" 
+    height="600" 
+    frameborder="0" 
+    scrolling="no"></iframe>
   </div>
 </div>

@@ -1,10 +1,36 @@
-<div class="rrec-executive-tile w-48 h-64 flex flex-col m-8">
-  <div
-    class="rrec-executive-image-container w-full h-48 flex justify-center items-center"
-  >
-    <img src="{{ image }}" alt="" class="rrec-executive-image w-40 h-40" />
+<!-- <div class="rrec-executive-tile shadow border-red-600 flex flex-col md:flex-row m-8 p-6 w-auto items-center">
+    <img src="{{ image }}" alt="" class="rrec-executive-image w-40 h-40 rounded-full shadow-md lg:mr-6 md:mr-6" />
+  <div class="rrec-executive w-full mt-3">
+    <p class="label w-full text-left text-2xl mb-1 font-bold">{{ label }}</p>
+    <p class="w-full text-left text-lg mb-1 italic ">{{ headline }}</p>
+    <p class="w-full text-left text-sm mb-1">{{ description }}</p>
   </div>
-  <div class="rrec-executive-label w-full">
-    <p class="uppercase w-full text-center pt-2">{{ label }}</p>
+</div> -->
+
+<div *ngIf="!isDesktop" class="tile flex flex-col text-left text-white border-2 border-white shadow-xl rounded-lg justify-end" [style.background-image]="'url('+image+')'">
+  <div class="bios px-4 py-3">
+    <p class="label font-bold text-2xl mb-1">
+      {{label}}
+    </p>
+    <p class="headline italic text mb-1">
+      {{headline}}
+    </p>
+  </div>
+</div>
+
+<div *ngIf="isDesktop" class="tile-lg flex flex-row text-left text-white justify-center py-3">
+  <div class="photo w-4/12 rounded-lg border-white border-2" [style.background-image]="'url('+image+')'">
+
+  </div>
+  <div class="bio w-8/12 p-16 flex flex-col justify-center border-red-700">
+    <p class="label font-bold text-3xl mb-2 ">
+      {{label}}
+    </p>
+    <p class="headline italic text-lg mb-2">
+      {{headline}}
+    </p>
+    <p class="description italic text-base mb-1">
+      {{description}}
+    </p>
   </div>
 </div>

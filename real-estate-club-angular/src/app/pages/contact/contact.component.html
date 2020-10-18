@@ -1,35 +1,43 @@
 <div
-  class="rrec-contact h-auto px-16 py-4 flex justify-center items-start border-4 border-purple-400"
+  class="p-6 flex h-screen lg:flex-row md:flex-row sm:flex-col-reverse flex-col-reverse justify-around items-center bg-gray-500"
 >
-  <div class="rrec-contact-window justify-center w-full h-auto">
-    <div class="flex items-center justify-center">
-      <h1 class="rrec-window-title uppercase">
-        C<span class="rrec-second-underline">ontac</span>t
-      </h1>
-    </div>
-    <div class="flex w-full justify-around p-4 flex-wrap">
-      <app-executive-tile
-        label="Social Media"
-        image="https://www.broadwayjiujitsu.com/wp-content/uploads/2017/04/default-image.jpg"
-      ></app-executive-tile>
-      <app-executive-tile
-        label="Social Media"
-        image="https://www.broadwayjiujitsu.com/wp-content/uploads/2017/04/default-image.jpg"
-      ></app-executive-tile>
-      <app-executive-tile
-        label="Social Media"
-        image="https://www.broadwayjiujitsu.com/wp-content/uploads/2017/04/default-image.jpg"
-      ></app-executive-tile>
-    </div>
-    <div class="flex w-full justify-around p-4 flex-wrap">
-      <app-executive-tile
-        label="Social Media"
-        image="https://www.broadwayjiujitsu.com/wp-content/uploads/2017/04/default-image.jpg"
-      ></app-executive-tile>
-      <app-executive-tile
-        label="Social Media"
-        image="https://www.broadwayjiujitsu.com/wp-content/uploads/2017/04/default-image.jpg"
-      ></app-executive-tile>
-    </div>
+<div class="flex flex-col lg:w-7/12 md:w-7/12 w-full items-center">
+  <div class="w-full flex flex-row justify-around items-center">
+    <a href="https://www.facebook.com/officialrutgersrealestateclub/" target="_blank"
+     class="social m-1 text-white rounded-lg p-4 hover:shadow-lg lg:m-4 md:m-4"><span>
+      <fa-icon [icon]="faFacebookF" size="4x"></fa-icon>
+    </span></a>
+    <a href="https://www.linkedin.com/groups/7448067/" target="_blank"
+     class="social m-1 text-white rounded-lg p-4 hover:shadow-lg lg:m-4 md:m-4"><span>
+      <fa-icon [icon]="faLinkedin" size="4x"></fa-icon>
+    </span></a>
+    <a href="https://www.instagram.com/rutgersrealestateclub/?hl=en" target="_blank"
+     class="social m-1 text-white rounded-lg p-4 hover:shadow-lg lg:m-4 md:m-4"><span>
+      <fa-icon [icon]="faInstragram" class=""  size="4x"></fa-icon>
+    </span></a>
+    <a href="mailto:RealEstateClubRutgers@gmail.com" target="_blank"
+     class="social m-1 text-white rounded-lg p-4 hover:shadow-lg lg:m-4 md:m-4"><span>
+      <fa-icon [icon]="faEnvelope" size="4x"></fa-icon>
+    </span></a>
   </div>
+  <a href="https://linktr.ee/rrec/" class="w-6/12 bg-red-500 rounded py-2 px-3 shadow text-white text-center hover:bg-red-400 uppercae font-bold text-2xl mt-12" target="_blank">
+    join our mailing list
+  </a>
 </div>
+
+  <div class="flex flex-col justify-start items-center h-full">
+    <p class="text-6xl text-center font-bold m-4 self-start">Get in touch</p>
+    <form action="https://formspree.io/f/xzbkerzw" method="post" class="w-full bg-gray-200 p-6 flex flex-col rounded-lg self-center mt-16">
+      <label for="" class="text-center font-bold text-xl">Send us an email</label>
+      <input type="email" name="email" id="" placeholder="your email" class="m-2 py-2 px-3 shadow-sm">
+      <input type="text" name="subject" id="" placeholder="subject" class="m-2 py-2 px-3 shadow-sm">
+      <textarea name="body" id="" placeholder="body" class="m-2 py-2 px-3 resize-none shadow-sm" cols="30" rows="10"></textarea>
+      <button type="submit" class="bg-blue-500 rounded shadow hover:bg-blue-400 text-white p-2 m-2">
+        submit
+      </button>
+    </form>
+
+  </div>
+
+</div>
+

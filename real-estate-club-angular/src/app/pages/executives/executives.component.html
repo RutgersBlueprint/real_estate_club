@@ -1,73 +1,17 @@
 <div
-  class="rrec-executives h-auto lg:px-16 lg:py-4 p-2 flex flex-col justify-start items-center border-4 border-green-700"
+  class="p-6 h-screen flex lg:flex-row md:flex-row  sm:flex-col-reverse flex-col-reverse justify-center items-center bg-gray-500"
 >
-  <div class="justify-center w-full h-auto">
-    <div class="flex justify-center items-center">
-      <h1 class="rrec-window-title uppercase">
-        E<span class="rrec-second-underline">xecutive</span>s
-      </h1>
-    </div>
-    <div class="flex flex-wrap h-auto justify-center items-center mx-20">
+  <ngb-carousel class="lg:w-7/12 md:w-7/12 w-full">
+    <ng-template ngbSlide *ngFor="let executive of executives">
       <app-executive-tile
-        label="Name Position"
-        image="https://www.broadwayjiujitsu.com/wp-content/uploads/2017/04/default-image.jpg"
+        [isDesktop]="isDesktop"
+        label="{{executive.name}}"
+        headline="{{executive.headline}}"
+        description="{{executive.description}}"
+        image="{{executive.imagePath}}"
       ></app-executive-tile>
-      <app-executive-tile
-        label="Name Position"
-        image="https://www.broadwayjiujitsu.com/wp-content/uploads/2017/04/default-image.jpg"
-      ></app-executive-tile>
-      <app-executive-tile
-        label="Name Position"
-        image="https://www.broadwayjiujitsu.com/wp-content/uploads/2017/04/default-image.jpg"
-      ></app-executive-tile>
-      <app-executive-tile
-        label="Name Position"
-        image="https://www.broadwayjiujitsu.com/wp-content/uploads/2017/04/default-image.jpg"
-      ></app-executive-tile>
-      <app-executive-tile
-        label="Name Position"
-        image="https://www.broadwayjiujitsu.com/wp-content/uploads/2017/04/default-image.jpg"
-      ></app-executive-tile>
-      <app-executive-tile
-        label="Name Position"
-        image="https://www.broadwayjiujitsu.com/wp-content/uploads/2017/04/default-image.jpg"
-      ></app-executive-tile>
-      <app-executive-tile
-        label="Name Position"
-        image="https://www.broadwayjiujitsu.com/wp-content/uploads/2017/04/default-image.jpg"
-      ></app-executive-tile>
-      <app-executive-tile
-        label="Name Position"
-        image="https://www.broadwayjiujitsu.com/wp-content/uploads/2017/04/default-image.jpg"
-      ></app-executive-tile>
-      <app-executive-tile
-        label="Name Position"
-        image="https://www.broadwayjiujitsu.com/wp-content/uploads/2017/04/default-image.jpg"
-      ></app-executive-tile>
-      <app-executive-tile
-        label="Name Position"
-        image="https://www.broadwayjiujitsu.com/wp-content/uploads/2017/04/default-image.jpg"
-      ></app-executive-tile>
-      <app-executive-tile
-        label="Name Position"
-        image="https://www.broadwayjiujitsu.com/wp-content/uploads/2017/04/default-image.jpg"
-      ></app-executive-tile>
-      <app-executive-tile
-        label="Name Position"
-        image="https://www.broadwayjiujitsu.com/wp-content/uploads/2017/04/default-image.jpg"
-      ></app-executive-tile>
-      <app-executive-tile
-        label="Name Position"
-        image="https://www.broadwayjiujitsu.com/wp-content/uploads/2017/04/default-image.jpg"
-      ></app-executive-tile>
-      <app-executive-tile
-        label="Name Position"
-        image="https://www.broadwayjiujitsu.com/wp-content/uploads/2017/04/default-image.jpg"
-      ></app-executive-tile>
-      <app-executive-tile
-        label="Name Position"
-        image="https://www.broadwayjiujitsu.com/wp-content/uploads/2017/04/default-image.jpg"
-      ></app-executive-tile>
-    </div>
-  </div>
+    </ng-template>
+  </ngb-carousel>
+  <p class="text-6xl text-center font-bold m-4 self-start">Get to know us</p>
+
 </div>

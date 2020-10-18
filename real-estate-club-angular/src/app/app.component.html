@@ -1,69 +1,87 @@
 <nav
-  class="rrec-nav-bar flex flex-col justify-between h-48 sticky top-0 shadow-xl"
+  #navBar
+  id="nav-bar-dt"
+  class="rrec-nav-bar-clear flex flex-row justify-between items-center h-20 sticky top-0 shadow-xl"
   *ngIf="isDesktop"
 >
-    <div class="flex flex-row items-center justify-center self-center">
-      <h1 class="text-center uppercase m-4 lg:text-2xl text-base">
-        rutgers university<br />real estate club
-      </h1>
-    </div>
-    <div class="rrec-links flex flex-row items-center justify-around">
+    <div class="rrec-links flex flex-row items-center justify-around w-6/12">
       <button
         [ngxScrollTo]="'#home'"
-        [ngxScrollToOffset]="-180"
-        class="rrec-nav-link uppercase"
+        [ngxScrollToOffset]="-70"
+        class="rrec-nav-link bg-red-700 p-3 rounded-lg shadow uppercase"
+        #homeButtonDT
       >
         home
       </button>
       <button
         [ngxScrollTo]="'#about'"
-        [ngxScrollToOffset]="-180"
-        class="rrec-nav-link uppercase"
+        [ngxScrollToOffset]="-70"
+        class="rrec-nav-link uppercase p-3"
+        #aboutButtonDT
       >
         about
       </button>
       <button
         [ngxScrollTo]="'#executives'"
-        [ngxScrollToOffset]="-180"
-        class="rrec-nav-link uppercase"
+        [ngxScrollToOffset]="-70"
+        class="rrec-nav-link uppercase p-3"
+        #executivesButtonDT
       >
         executives
       </button>
       <button
         [ngxScrollTo]="'#alumni'"
-        [ngxScrollToOffset]="-180"
-        class="rrec-nav-link uppercase"
+        [ngxScrollToOffset]="-70"
+        class="rrec-nav-link uppercase p-3"
+        #alumniButtonDT
       >
         alumni
       </button>
       <button
-        [ngxScrollTo]="'#contacts'"
-        [ngxScrollToOffset]="-180"
-        class="rrec-nav-link uppercase"
+      [ngxScrollTo]="'#events'"
+      [ngxScrollToOffset]="-70"
+      class="rrec-nav-link uppercase"
+      #eventsButtonDT
       >
-        contacts
+        events
       </button>
       <button
-        [ngxScrollTo]="'#upcoming-events'"
-        [ngxScrollToOffset]="-180"
-        class="rrec-nav-link uppercase"
+        [ngxScrollTo]="'#contact'"
+        [ngxScrollToOffset]="-70"
+        class="rrec-nav-link uppercase p-3"
+        #contactButtonDT
       >
-        upcoming events
+        contact us
       </button>
+    </div>
+    <div class="w-2/12 mr-6 flex flex-row justify-around rounded p-2">
+      <a class="nav-social" href="https://www.facebook.com/officialrutgersrealestateclub/" target="_blank">
+        <span><fa-icon [icon]="faFacebookF" class="mx-4 text-white" size="2x"></fa-icon></span>
+      </a>
+      <a class="nav-social" href="https://www.linkedin.com/groups/7448067/" target="_blank">
+        <span><fa-icon [icon]="faLinkedin" class="mx-4 text-white" size="2x"></fa-icon></span>
+      </a>
+      <a class="nav-social" href="https://www.instagram.com/rutgersrealestateclub/?hl=en" target="_blank" class="nav-social">
+        <span><fa-icon [icon]="faInstagram" class="mx-4 text-white" size="2x"></fa-icon></span>
+      </a>
+      <a class="nav-social" href="mailto:RealEstateClubRutgers@gmail.com" target="_blank">
+        <span><fa-icon [icon]="faEnvelope" class="mx-4 text-white" size="2x"></fa-icon></span>
+      </a>
     </div>
 </nav>
 
 <nav
-  class="rrec-nav-bar h-auto sticky top-0 flex flex-col justify-center shadow-xl"
+  class="rrec-nav-bar-dark h-auto py-6 pl-2 sticky top-0 flex flex-col justify-center shadow-xl"
   *ngIf="!isDesktop"
 >
   <div class="flex flex-row justify-between px-8">
     <button
-      class="text-center text-2xl self-center font-bold uppercase"
-      [ngxScrollTo]="landing"
-      [ngxScrollToOffset]="-130"
+      class="text-center text-2xl self-center uppercase"
+      [ngxScrollTo]="'#home'"
+      [ngxScrollToOffset]="-70"
+      (click)="openMobileMenu()"
     >
-    rutgers university<br />real estate club
+    rrec
   </button>
     <button class="" (click)="openMobileMenu()">
       <fa-icon size="2x" [icon]="['fas', 'bars']"></fa-icon>
@@ -75,7 +93,8 @@
         <button
         [ngxScrollTo]="'#home'"
         [ngxScrollToOffset]="-70"
-        class="rrec-nav-link uppercase"
+        class="rrec-nav-link uppercase w-full text-right p-4"
+        (click)="openMobileMenu()"
       >
         home
       </button>
@@ -84,7 +103,8 @@
         <button
         [ngxScrollTo]="'#about'"
         [ngxScrollToOffset]="-70"
-        class="rrec-nav-link uppercase"
+        class="rrec-nav-link uppercase w-full text-right p-4"
+        (click)="openMobileMenu()"
       >
         about
       </button>
@@ -93,7 +113,8 @@
         <button
         [ngxScrollTo]="'#executives'"
         [ngxScrollToOffset]="-70"
-        class="rrec-nav-link uppercase"
+        class="rrec-nav-link uppercase w-full text-right p-4"
+        (click)="openMobileMenu()"
       >
         executives
       </button>
@@ -102,36 +123,52 @@
         <button
         [ngxScrollTo]="'#alumni'"
         [ngxScrollToOffset]="-70"
-        class="rrec-nav-link uppercase"
+        class="rrec-nav-link uppercase w-full text-right p-4"
+        (click)="openMobileMenu()"
       >
         alumni
       </button>
       </li>
       <li>
         <button
-        [ngxScrollTo]="'#contacts'"
+        [ngxScrollTo]="'#events'"
         [ngxScrollToOffset]="-70"
-        class="rrec-nav-link uppercase"
+        class="rrec-nav-link uppercase w-full text-right p-4"
+        (click)="openMobileMenu()"
       >
-        contacts
+        upcoming events
       </button>
       </li>
       <li>
         <button
-        [ngxScrollTo]="'#upcoming-events'"
+        [ngxScrollTo]="'#contact'"
         [ngxScrollToOffset]="-70"
-        class="rrec-nav-link uppercase"
+        class="rrec-nav-link uppercase w-full text-right p-4"
+        (click)="openMobileMenu()"
       >
-        upcoming events
+        contacts
       </button>
       </li>
     </ul>
   </div>
 </nav>
-<app-home id="home"></app-home>
-<app-about id="about"></app-about>
-<app-executives id="executives"></app-executives>
-<app-alumni id="alumni"></app-alumni>
-<app-contact id="contacts"></app-contact>
-<app-upcoming-events id="upcoming-events"></app-upcoming-events>
-<app-footer [className]="'h-32'"></app-footer>
+<div #home id="home">
+  <app-home></app-home>
+</div>
+<div #about id="about">
+  <app-about></app-about>
+</div>
+<div #executives id="executives">
+  <app-executives></app-executives>
+</div>
+<div #alumni id="alumni">
+  <app-alumni></app-alumni>
+</div>
+<div #events id="events">
+  <app-upcoming-events></app-upcoming-events>
+</div>
+<div #contact id="contact">
+  <app-contact></app-contact>
+</div>
+
+<app-footer></app-footer>
