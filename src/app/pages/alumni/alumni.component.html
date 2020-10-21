@@ -1,4 +1,4 @@
-<div class="p-6 flex flex-col justify-center items-center bg-white">
+<div class="p-6 h-screen flex flex-col justify-center items-center bg-white">
   
 
   
@@ -8,7 +8,10 @@
   <p class="text-6xl text-center font-bold mt-4 mb-0">Get the scoop</p>
   <p class="text-lg text-center font-bold italic mt-0">Alumni Testimonies</p>
 
-  <div class="flex flex-wrap justify-center">
+  <!-- below code block for when alumni assets are sent
+        IMPORTANT: take off h-screen in parent div when implemented
+  -->
+  <!-- <div class="flex flex-wrap justify-center">
     <div class="flex flex-col items-center my-6 mx-12" *ngFor="let al of alumni_row_1">
       <img src="{{al.image}}" class="rounded-full h-48 w-48 shadow" alt="">
       <p class="text-center text-xl text-black mt-3 mb-1">{{al.name}}</p>
@@ -24,8 +27,12 @@
       <p class="text-center text-sm text-black mb-2">{{al.headline}}</p>
       <button class="bg-blue-500 rounded py-2 px-3 shadow text-white hover:bg-blue-400" (click)="open(content, al)">view</button>
     </div>
-  </div>
+  </div> -->
 
+  <!-- temporary coming soon code block -->
+  <p class="text-center-font-bold-italic-text-gray-800 text-4xl">
+    Coming Soon
+  </p>
 </div>
 
 <ng-template #content let-modal>
