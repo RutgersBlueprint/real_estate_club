@@ -8,7 +8,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-  isDesktop;
+  isDesktop: boolean = true;
   faInstragram = faInstagram;
   faFacebookF = faFacebookF;
   faLinkedin = faLinkedin;
