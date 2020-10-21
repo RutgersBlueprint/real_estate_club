@@ -1,3 +1,8 @@
 /* .social:hover .ng-fa-icon {
     color: red;
 } */
+@media only screen and (max-width: 1100px) {
+    #contact-page {
+      height: auto;
+    }
+  }

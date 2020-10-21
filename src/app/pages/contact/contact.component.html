@@ -1,33 +1,38 @@
 <div
+  id="contact-page"
   class="p-6 flex h-screen lg:flex-row md:flex-row sm:flex-col-reverse flex-col-reverse justify-around items-center bg-gray-500"
 >
 <div class="flex flex-col lg:w-7/12 md:w-7/12 w-full items-center">
   <div class="w-full flex flex-row justify-around items-center">
     <a href="https://www.facebook.com/officialrutgersrealestateclub/" target="_blank"
      class="social m-1 text-white rounded-lg p-4 hover:shadow-lg lg:m-4 md:m-4"><span>
-      <fa-icon [icon]="faFacebookF" size="4x"></fa-icon>
+      <fa-icon *ngIf="isDesktop" [icon]="faFacebookF" size="4x"></fa-icon>
+      <fa-icon *ngIf="!isDesktop" [icon]="faFacebookF" size="2x"></fa-icon>
     </span></a>
     <a href="https://www.linkedin.com/groups/7448067/" target="_blank"
      class="social m-1 text-white rounded-lg p-4 hover:shadow-lg lg:m-4 md:m-4"><span>
-      <fa-icon [icon]="faLinkedin" size="4x"></fa-icon>
+      <fa-icon *ngIf="isDesktop" [icon]="faLinkedin" size="4x"></fa-icon>
+      <fa-icon *ngIf="!isDesktop" [icon]="faLinkedin" size="2x"></fa-icon>
     </span></a>
     <a href="https://www.instagram.com/rutgersrealestateclub/?hl=en" target="_blank"
      class="social m-1 text-white rounded-lg p-4 hover:shadow-lg lg:m-4 md:m-4"><span>
-      <fa-icon [icon]="faInstragram" class=""  size="4x"></fa-icon>
+      <fa-icon *ngIf="isDesktop" [icon]="faInstragram" class=""  size="4x"></fa-icon>
+      <fa-icon *ngIf="!isDesktop" [icon]="faInstragram" class=""  size="2x"></fa-icon>
     </span></a>
     <a href="mailto:RealEstateClubRutgers@gmail.com" target="_blank"
      class="social m-1 text-white rounded-lg p-4 hover:shadow-lg lg:m-4 md:m-4"><span>
-      <fa-icon [icon]="faEnvelope" size="4x"></fa-icon>
+      <fa-icon *ngIf="isDesktop" [icon]="faEnvelope" size="4x"></fa-icon>
+      <fa-icon *ngIf="!isDesktop" [icon]="faEnvelope" size="2x"></fa-icon>
     </span></a>
   </div>
-  <a href="https://linktr.ee/rrec/" class="w-6/12 bg-red-500 rounded py-2 px-3 shadow text-white text-center hover:bg-red-400 font-bold text-2xl mt-12" target="_blank">
+  <a href="https://linktr.ee/rrec/" class="lg:text-2xl md:text-2xl text-base bg-red-500 rounded py-2 px-3 shadow text-white text-center hover:bg-red-400 font-bold  mt-12" target="_blank">
     Join Our Mailing List
   </a>
 </div>
 
-  <div class="flex flex-col justify-start items-center h-full">
-    <p class="text-6xl text-center font-bold m-4 self-start">Get in touch</p>
-    <form action="https://formspree.io/f/xzbkerzw" method="post" class="w-full bg-gray-200 p-6 flex flex-col rounded-lg self-center mt-16">
+  <div *ngIf="isDesktop" class="flex flex-col justify-start items-center h-full lg:w-auto md:w-auto w-full">
+    <p class="lg:text-6xl md:text-6xl text-3xl text-center font-bold m-4 lg:self-start md:self-start self-center">Get in touch</p>
+    <form action="https://formspree.io/f/xzbkerzw" method="post" class="lg:w-full md:w-full w-auto bg-gray-200 p-6 flex flex-col rounded-lg self-center mt-16">
       <label for="" class="text-center font-bold text-xl">Send us an email</label>
       <input type="email" name="email" id="" placeholder="your email" class="m-2 py-2 px-3 shadow-sm">
       <input type="text" name="subject" id="" placeholder="subject" class="m-2 py-2 px-3 shadow-sm">
