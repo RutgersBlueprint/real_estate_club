@@ -13,7 +13,13 @@ export class ContactComponent implements OnInit {
   faFacebookF = faFacebookF;
   faLinkedin = faLinkedin;
   faEnvelope = faEnvelope;
-  constructor() { }
+  constructor() {
+    if(window.innerWidth < 745){
+      this.isDesktop = false;
+    } else {
+      this.isDesktop = true;
+    }
+  }
 
   ngOnInit() {
   }
