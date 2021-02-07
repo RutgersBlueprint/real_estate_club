@@ -1,6 +1,7 @@
 import { Component, ElementRef, HostListener, QueryList, ViewChild, ViewChildren } from '@angular/core';
 import { faFacebookF, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { AngularFireAnalytics } from '@angular/fire/analytics';
 
 @Component({
   selector: 'app-root',
@@ -26,12 +27,13 @@ export class AppComponent {
   faEnvelope = faEnvelope;
   faInstagram = faInstagram;
 
-  constructor() { // detect screen size
+  constructor(analytics: AngularFireAnalytics) { // detect screen size
     if(window.innerWidth < 1450){
       this.isDesktop = false;
     } else {
       this.isDesktop = true;
     }
+    analytics.logEvent('app load');
   }
 
   @HostListener('window:resize', ['$event'])

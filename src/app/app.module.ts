@@ -23,6 +23,9 @@ import {
 } from "@fortawesome/angular-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
+import { AngularFireModule } from "@angular/fire";
+import { environment } from "src/environments/environment.prod";
 
 @NgModule({
   declarations: [
@@ -41,7 +44,15 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     UpcomingEventTileComponent,
     UpcomingEventPostComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule, ScrollToModule.forRoot(), NgbModule],
+  imports: [
+    BrowserModule, 
+    AppRoutingModule, 
+    FontAwesomeModule, 
+    ScrollToModule.forRoot(), 
+    NgbModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAnalyticsModule
+  ],
   exports: [ScrollToModule],
   providers: [],
   bootstrap: [AppComponent]
