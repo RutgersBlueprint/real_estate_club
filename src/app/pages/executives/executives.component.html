@@ -1,47 +1,51 @@
-<div id="alumni-page" class="p-6 flex flex-col justify-center items-center bg-white">
+<div id="exec-page" class="p-6 flex flex-col justify-center items-center bg-white">
   <p class="lg:text-6xl md:text-6xl text-3xl text-center font-bold mt-4 mb-0">Get to know us</p>
 
-  <!-- below code block for when alumni assets are sent
+  <!-- below code block for when exec assets are sent
         IMPORTANT: take off h-screen in parent div when implemented
   -->
   <div class="flex flex-wrap justify-center w-full">
-    <div class="flex flex-col items-center my-6 mx-12" *ngFor="let al of alumni_row_1">
-      <img src="{{al.image}}" class="rounded-full h-40 w-40 shadow" alt="">
-      <p class="text-center text-xl text-black mt-3 mb-1">{{al.name}}</p>
-      <p class="text-center text-sm text-black mb-2">{{al.position}}</p>
-      <button class="bg-blue-500 rounded py-2 px-3 shadow text-white hover:bg-blue-400" (click)="open(content, al)">view</button>
+    <div class="flex flex-col items-center my-6 mx-12 cursor-pointer text-gray-800 hover:text-blue-400" *ngFor="let al of exec_row_1" (click)="open(content, al)">
+      <img src="{{al.path}}" class="rounded-full h-40 w-40 shadow" alt="">
+      <p class="text-center text-xl mt-3 mb-1">{{al.name}}</p>
+      <p class="text-center text-sm mb-2">{{al.position}}</p>
     </div>
   </div>
-
   <div class="flex flex-wrap justify-center w-full">
-    <div class="flex flex-col items-center my-6 mx-12" *ngFor="let al of alumni_row_2">
-      <img src="{{al.image}}" class="rounded-full h-40 w-40 shadow" alt="">
-      <p class="text-center text-xl text-black mt-3 mb-1">{{al.name}}</p>
-      <p class="text-center text-sm text-black mb-2">{{al.position}}</p>
-      <button class="bg-blue-500 rounded py-2 px-3 shadow text-white hover:bg-blue-400" (click)="open(content, al)">view</button>
+    <div class="flex flex-col items-center my-6 mx-12 cursor-pointer text-gray-800 hover:text-blue-400" *ngFor="let al of exec_row_2" (click)="open(content, al)">
+      <img src="{{al.path}}" class="rounded-full h-40 w-40 shadow" alt="">
+      <p class="text-center text-xl mt-3 mb-1">{{al.name}}</p>
+      <p class="text-center text-sm mb-2">{{al.position}}</p>
     </div>
   </div>
 </div>
 
 <ng-template #content let-modal>
 
-  <div class="alumni-modal flex flex-col items-center justify-between text-black">
-    <div class="alumni-header flex flex-row justify-start items-center w-full p-3">
-      <img src="{{modalAlumni.image}}" class="h-24 w-24 rounded-full shadow" alt="">
-      <p class="ml-4 font-bold text-2xl">
-        {{modalAlumni.name}}
-        <br>
-        <span class="text-sm italic text-gray-700 font-normal">
-          {{modalAlumni.headline}}
-        </span>
-      </p>
+  <div class="exec-modal flex flex-col items-center justify-between text-black">
+    <div class="exec-header flex flex-row justify-start items-center w-full p-3">
+      <img src="{{modalExec.path}}" class="h-24 w-24 rounded-full shadow" alt="">
+      <div class="flex flex-col justify-center items-start">
+        <p class="ml-3 my-0 font-bold text-2xl text-left">
+          {{modalExec.name}}
+        </p>
+        <p class="ml-3 my-0 text-sm italic text-gray-700 font-normal text-left">
+          {{modalExec.headline}}
+        </p>
+      </div>
     </div>
-    <p class="alumni-body h-auto w-full py-2 px-4 italic">
-      {{modalAlumni.description}}
+    <p class="exec-body h-auto w-full py-2 px-4 italic">
+      {{modalExec.bio}}
     </p>
-    <button (click)="modal.dismiss('Cross click')" class="bg-blue-500 hover:bg-blue-400 rounded text-white py-2 px-3 m-3 self-end">
-      Done
-    </button> 
+    <div class="flex flex-row justify-between items-center w-full">
+      <a href="{{modalExec.linkedin}}" target="_blank" class="ml-4"><span>
+      <fa-icon [icon]="faLinkedin" size="3x"></fa-icon>
+    </span></a>
+      <button (click)="modal.dismiss('Cross click')" class="bg-blue-500 hover:bg-blue-400 rounded text-white py-2 px-3 m-3 self-end">
+        Done
+      </button> 
+    </div>
+
   </div>
 
 </ng-template>
