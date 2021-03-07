@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Frank LoPiccolo",
+        "position": "President",
+        "headline": "Club President, Summer Financial Analyst Intern",
+        "bio": "Frank is a junior at the Rutgers Business School, majoring in Finance with a concentration in Real Estate. Last summer, Frank completed a summer internship with Johnson & Johnson's Tax department. Next summer, Frank will be a Summer Analyst with Syneos Health in Raleigh, North Carolina. In the future, Frank wants to become a licensed agent and open his own business.",
+        "path": "../../../assets/Frank.jpg",
+        "linkedin": "https://www.linkedin.com/in/frank-lopiccolo-jr/"
+    },
+    {
+        "name": "Madeline Delayo",
+        "position": "Vice President",
+        "headline": "Club Vice President, Commercial Real Estate Research Analyst Intern",
+        "bio": "Madeline is currently a junior at the Rutgers Business School pursuing a degree in Finance with a minor in Psychology and a concentration in Real Estate. She is currently interning for a commercial real estate firm, Berko & Associates, and its sister private equity firm, Astor Realty Capital. Madeline is also an active member of the Community Committee in the Rutgers Undergraduate Women in Business club, and she helps train service dogs in the Rutgers University Companion Animal Club. In the future, she plans on using her experience and what she’s learned to become a key player in the real estate market.",
+        "path": "../../../assets/Madeline.png",
+        "linkedin": "https://www.linkedin.com/in/madeline-delayo-a45782192/"
+    },
+    {
+        "name": "Aesha Mehta",
+        "position": "Social Media Manager",
+        "headline": "Social Media Manager",
+        "bio": "Aesha is a sophomore studying Supply Chain Management and Finance with a concentration in Real Estate at Rutgers Business School. In the future, she hopes to make a positive impact and work full-time in the real estate sector. She is currently a Financial Analyst intern at Lever Capital Partners which is a commercial real estate firm. In her free time, she enjoys photography and dancing. She is very optimistic and loves meeting new people so feel free to reach out to her! ",
+        "path": "../../../assets/Aesha.JPG",
+        "linkedin": "https://www.linkedin.com/in/aesha-mehta/"
+    },
+    {
+        "name": "Kunal Bhosale",
+        "position": "Marketing Manager",
+        "headline": "Club Marketing Manager",
+        "bio": "Kunal is a Junior at the Rutgers Business School, majoring in Business Analytics and Information Technology as well as minoring in Computer Science. He has a strong interest in real estate and hopes to use his skills and knowledge as a real estate investment analyzer. Outside of school, Kunal loves to play tennis and hike.",
+        "path": "../../../assets/Kunal_Bhosale.jpg",
+        "linkedin": "https://www.linkedin.com/in/thekunalbhosale/"
+    },
+    {
+        "name": "Lorenz Komischke",
+        "position": "Treasurer",
+        "headline": "Treasurer",
+        "bio": "Lorenz is currently a Sophomore at the Rutgers Business School pursuing a degree in Finance and a concentration in Real Estate. He is currently interning at a distressed real estate acquisition firm, Cooper Square Acquisitions, and a Venture Capital Firm, Foundation Venture Capital. In the future, he wants to own a portfolio of residential real estate.",
+        "path": "../../../assets/Lorenz.png",
+        "linkedin": "https://www.linkedin.com/in/lorenzkomischke/"
+    },
+    {
+        "name": "Sanjana Sinha",
+        "position": "Social Media Marketing Chair",
+        "headline": "Social Media Marketing Chair",
+        "bio": "Sanjana is a sophomore at Rutgers Business School double majoring in Supply Chain Management and Business Analytics Information Technology. On-campus she is involved as Historian for Phi Beta Lambda-Future Business Leaders of America, a mentor for freshmen for Rutgers Business School Peer Mentoring Program, and an active member of Rutgers University Supply Chain Association. In the future, she plans to use her knowledge acquired to go into an analyst role as well as become a licensed agent in the real estate field.",
+        "path": "../../../assets/Sanjana.png",
+        "linkedin": "https://www.linkedin.com/in/sanjanasinhaa/"
+    },
+    {
+        "name": "Leena Abdelsamad",
+        "position": "Chief Accountability Officer",
+        "headline": "Chief Accountability Officer",
+        "bio": "Leena Abdelsamad is a freshman hoping to major in Finance and Economics with a concentration in real estate. Last summer, she was able to acquire her New Jersey Real Estate License and has been working to establish her presence in the industry since. She is currently an agent at Berkshire Hathaway and interns at ABDM Property Management.",
+        "path": "../../../assets/Leena.png",
+        "linkedin": "https://www.linkedin.com/in/leena-abdelsamad-03b2061aa/"
+    }
+]
